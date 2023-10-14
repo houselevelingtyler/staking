@@ -1,0 +1,121 @@
+@import "../../global.scss";
+.why{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    background: #1c0252;
+    @include mobile_potrait{
+    }
+
+    .whyContent{
+        width: 80%;
+        display: flex;
+        z-index: 1;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include mobile_potrait{
+            width: 90%;
+            height: 90%;
+            flex-direction: column;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .title{
+            margin-bottom: 2rem;
+            h1{
+                width: 70%;
+                text-align: center;
+                @include mobile_potrait{
+                    width: 100%;
+                }
+            }
+        }
+        .wrapper{
+            width: 90%;
+            display: flex;
+            max-width: 1440px;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+
+            @include mobile_potrait{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                max-width:  90%;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            @include mobile_landscape{
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            .left{
+                flex:0.5;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                h2{
+                    font-size: 26px;
+                    color:#fff;
+                    margin-bottom: 1rem;
+                    @include mobile_potrait{
+                        font-size: 0.8rem;
+                        text-align: center;
+                    }
+                    @include mobile_landscape{
+                        font-size: 0.6rem;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    color:#ddd;
+                    line-height: 1.5;
+                    margin-bottom: 2rem;
+                    @include mobile_potrait{
+                        font-size: 0.8rem;
+                        text-align: center;
+                    }
+                    @include mobile_landscape{
+                        font-size: 0.6rem;
+                    }
+                }
+                
+            }
+            .right{
+                flex:0.5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                @include mobile_potrait{
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+                @include mobile_landscape{
+                    font-size: 0.8rem;
+                }
+                img{
+                    width: 90%;
+                }
+               
+            }
+        }
+       
+        .bg1{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}

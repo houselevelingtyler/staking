@@ -1,0 +1,340 @@
+@import "../../global.scss";
+.tokenStaking{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 0 32px;
+    padding-top: 100px;
+    min-height: 100vh;
+    
+    @include mobile_potrait{
+        padding-top: 120px;
+
+    }
+
+    .content{
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 1240px;
+        @include mobile_potrait{
+        }
+        
+        h1{
+            font-size: 42px;
+            font-weight: normal;
+            color: #FF0099;
+            text-align: center;
+            text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+            width: 100%;
+            text-align: center;           
+            margin-bottom: 3rem;
+            letter-spacing: -1px;
+            @include mobile_potrait{
+                font-size: 24px;
+                width: 100%;
+                line-height: 36px;
+            }
+        }
+
+        .wrapper{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            @include mobile_potrait{
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+            }
+            .col_div{
+                width: calc(33% - 8px);
+                box-sizing: border-box;
+                @include mobile_potrait{
+                    width: 100%;
+                }
+            }
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            .staking_card{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: fit-content;
+                border: 1px #222 solid;
+                border-radius: 10px;
+                box-sizing: border-box;
+                // padding: 16px;
+                overflow: hidden;
+                position: relative;
+                grid-area: auto;
+                padding-bottom: 16px;
+                @include mobile_potrait{
+                    margin-bottom: 3rem;
+                }
+                
+                .header{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    position: relative;
+                    margin-bottom: 32px;
+                    
+                    .content_div{
+                        z-index: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #f2b321;
+                        width: 100%;
+                        padding-top: 16px;
+                        padding-bottom: 16px;
+                    }
+                    .logoImg{
+                        width: 60px;
+                        margin-right: 1rem;
+                        @include mobile_potrait{
+                            width: 3rem;
+                            margin-right: 0.5rem;
+                        }
+                       
+                    }
+                    h2{
+                        z-index: 1;
+                        font-size: 24px;
+                        color: #ff0099;
+                        width: auto;
+                        font-weight: normal;
+                        letter-spacing: -1px;
+                        text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5;
+                        @include mobile_potrait{
+                            font-size: 1.2rem;
+                        }
+                        
+                    }
+                    .bg{
+                        width: 100%;
+                    }
+                }
+                .row_div{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    justify-content: space-between;
+                    grid-area: auto;
+                    gap : 8px;
+                    box-sizing: border-box;
+                    padding: 0 16px;
+                    margin-bottom: 32px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    @media screen and (min-width: 726px) and (max-width: 900px){
+                        flex-direction: column;
+                    }
+
+                    .input_div{
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        input{
+                            max-width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 14px;
+                            font-weight: normal;
+                            color: #fff;
+                            background-color: #ffffff1a;
+                            border: none;
+                            text-align: left;
+                            z-index: 1;
+                            padding: 10px;
+                            border-radius: 5px;
+                            &:focus{
+                                outline: none;
+                            }
+                            @include mobile_potrait{
+                            }
+    
+                        }
+                        input[type=number]::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                        }
+                        .alrt{
+                            position: absolute;
+                            top: calc(100% + 8px);
+                            font-size: 0.8rem;
+                            left: 0.5rem;
+                            color: #ff3f04;
+                            @include mobile_potrait{
+                            font-size: 0.6rem;
+                        }
+                        }
+
+                        
+                    }
+                    .text{
+                        z-index: 1;
+                        font-size: 13px;
+                        color: #656565;
+                        font-weight: normal;
+                        text-transform: uppercase;
+                        @include mobile_potrait{
+                            font-size: 10px;
+                        }
+                        span{
+                            color: #fff;
+                        }
+                        
+                    }
+                }
+                .btns{
+                    display: flex;
+                    align-content: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    grid-area: auto;
+                    gap : 16px;
+                    padding: 0 16px;
+                    box-sizing: border-box;
+                    margin-bottom: 32px;
+
+                    @media screen and (min-width: 726px) and (max-width: 900px){
+                        flex-direction: column;
+                    }
+
+                    button{
+                        display: flex;
+                        list-style: circle;
+                        justify-content: center;
+                        flex: 1;
+                    }
+                    .claimBtn{
+                        
+                        border: none;
+                        border-radius: 10px;
+                        padding: 16px 20px;
+                        display: flex;
+                        align-items: center;
+                        flex: 1;
+                        transition: all 0.3s ease;
+                        position: relative;
+                        background-color: #FF0099;
+                        cursor: pointer;
+                        @include mobile_potrait{
+                        }
+                        &:hover{
+                            background-color: #fc4bb5;
+                        }
+                        p{
+                            z-index: 1;
+                            margin-bottom: 0rem;
+                            font-size: 1rem;
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            width: auto;
+                            font-weight: normal;
+                            margin-left: 0rem;
+                            @include mobile_potrait{
+                                font-size: 12px;
+                            }
+                            
+                        }
+                    }
+                    .unstakeBtn{
+                        border: none;
+                        border-radius: 10px;
+                        padding: 16px 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.3s ease;
+                        position: relative;
+                        background-color: #888;
+                        cursor: pointer;
+                        
+                        @include mobile_potrait{
+                        }
+                        &:hover{
+                            background-color: #999;
+                        }
+                        p{
+                            z-index: 1;
+                            margin-bottom: 0rem;
+                            font-size: 1rem;
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            width: auto;
+                            font-weight: normal;
+                            margin-left: 0rem;
+                            @include mobile_potrait{
+                                font-size: 12px;
+                            }
+                            
+                        }
+                    }
+                }
+
+            }
+            .noData{
+                width: 100%;
+                height: 100%;
+                min-height: 60vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h2{
+                    font-size: 3rem;
+                    color: #fff;
+                    text-align: center;
+                    @include mobile_potrait{
+                        font-size: 1rem;
+                    }
+                    @include mobile_landscape{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .not_connectiot{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 50vh;
+                h2{
+                    color: #656565;
+                    font-size: 32px;
+                    text-align: center;
+                    font-weight: normal;
+
+                    @include mobile_potrait{
+                        font-size: 18px;
+                        line-height: 36px;
+                    }
+                }
+            }
+        }
+
+    }
+    
+}
