@@ -13,7 +13,7 @@ export default function Footer() {
                             <a href="https://azteccrypto.xyz/team.html" target="_blank"rel="noreferrer">Team</a>
                             <a href="https://azteccrypto.xyz/news.html" target="_blank"rel="noreferrer">News</a> 
                             <a href="https://quickswap.exchange/#/swap?inputCurrency=ETH&outputCurrency=0xe5087395862a208071A7909687a6c4Fe30458F1e&swapIndex=1" target="_blank"rel="noreferrer">Buy/Sell</a> 
-                            <a href="https://azteccrypto.xyz/staking.html" target="_blank"rel="noreferrer">Staking</a> 
+                            <a href="https://staking.azteccrypto.xyz/" target="_blank"rel="noreferrer">Staking</a> 
                             <a href="https://azteccrypto.xyz/white_paper.html" target="_blank"rel="noreferrer">White Paper</a> 
                         </div>
                         
